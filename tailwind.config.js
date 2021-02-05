@@ -124,6 +124,8 @@ module.exports = {
         borderColor: theme => ({
             ...theme("colors"),
             DEFAULT: theme("colors.gray.200", "currentColor"),
+            primary: "#73C8A9",
+            secondary: "#373B44",
         }),
         borderOpacity: theme => theme("opacity"),
         borderRadius: {
@@ -654,7 +656,11 @@ module.exports = {
             1: "1",
             2: "2",
         },
-        textColor: theme => theme("colors"),
+        textColor: theme => ({
+            ...theme("colors"),
+            primary: "#73C8A9",
+            secondary: "#373B44",
+        }),
         textOpacity: theme => theme("opacity"),
         transitionDuration: {
             DEFAULT: "150ms",
