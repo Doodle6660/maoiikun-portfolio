@@ -1,9 +1,15 @@
 <template>
-  <div class="home">
-    <div class="flex h-screen w-full bg-red-400"></div>
-  </div>
+    <div class="home">
+        <app-hello></app-hello>
+    </div>
 </template>
 
 <script>
-export default {};
+import Hello from "@/components/Hello.vue"
+
+export default {
+    components: {
+        "app-hello": Hello,
+    },
+}
 </script>
